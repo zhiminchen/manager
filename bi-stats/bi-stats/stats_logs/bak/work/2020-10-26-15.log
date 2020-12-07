@@ -1,0 +1,931 @@
+2020-10-26 15:03:16.0628 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 7040 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 15:03:16.0635 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 15:03:17.0146 [main] ERROR com.zaxxer.hikari.HikariConfig-[Line:482]>Failed to load driver class com.mysql.cj.jdbc.Driver from HikariConfig class classloader jdk.internal.loader.ClassLoaders$AppClassLoader@2f0e140b
+2020-10-26 15:03:17.0156 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter-[Line:40]>
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'hikari.bi' to javax.sql.DataSource:
+
+    Property: hikari.bi.driver-class-name
+    Value: com.mysql.cj.jdbc.Driver
+    Origin: class path resource [application.yml]:14:24
+    Reason: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+
+Action:
+
+Update your application's configuration
+
+2020-10-26 15:06:53.0358 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 27584 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 15:06:53.0362 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 15:06:53.0942 [main] ERROR com.zaxxer.hikari.HikariConfig-[Line:482]>Failed to load driver class com.mysql.cj.jdbc.Driver from HikariConfig class classloader jdk.internal.loader.ClassLoaders$AppClassLoader@2f0e140b
+2020-10-26 15:06:53.0953 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter-[Line:40]>
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'hikari.bi' to javax.sql.DataSource:
+
+    Property: hikari.bi.driver-class-name
+    Value: com.mysql.cj.jdbc.Driver
+    Origin: class path resource [application.yml]:14:24
+    Reason: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+
+Action:
+
+Update your application's configuration
+
+2020-10-26 15:08:33.0819 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 5724 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 15:08:33.0821 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 15:08:34.0314 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 0.773 seconds (JVM running for 1.19)
+2020-10-26 15:08:48.0790 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:35]>select day , server_name , server_id, action_type,  count(distinct user_id) as count from `bi_login_2020-10-25`  where day='2020-10-25' group by day , server_name , server_id, action_type 
+2020-10-26 15:08:48.0797 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-1 - Starting...
+2020-10-26 15:08:49.0039 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-1 - Start completed.
+2020-10-26 15:08:49.0096 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-1 - Shutdown initiated...
+2020-10-26 15:08:49.0121 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-1 - Shutdown completed.
+2020-10-26 15:09:26.0446 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 5984 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 15:09:26.0449 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 15:09:26.0937 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 0.768 seconds (JVM running for 1.204)
+2020-10-26 15:09:42.0741 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:35]>select day , server_name , server_id, action_type,  count(distinct user_id) as count from `bi_login_2020-10-25`  where day='2020-10-25' group by day , server_name , server_id, action_type 
+2020-10-26 15:09:43.0898 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-1 - Starting...
+2020-10-26 15:09:44.0732 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-1 - Start completed.
+2020-10-26 15:10:13.0249 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-1 - Shutdown initiated...
+2020-10-26 15:10:13.0316 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-1 - Shutdown completed.
+2020-10-26 15:11:43.0163 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 38792 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 15:11:43.0165 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 15:11:43.0633 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 0.756 seconds (JVM running for 1.181)
+2020-10-26 15:11:43.0639 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:35]>select day , server_name , server_id, action_type,  count(distinct user_id) as count from `bi_login_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, action_type 
+2020-10-26 15:11:43.0658 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-1 - Starting...
+2020-10-26 15:11:43.0859 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-1 - Start completed.
+2020-10-26 15:11:54.0316 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:50]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`,)values('2020-10-24','game','1','-1','1','20')   
+2020-10-26 15:11:54.0421 [main] ERROR c.z.s.d.b.s.s.login.detail.LoginTask-[Line:55]>StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`,)values('2020-10-24','game','1','-1','1','20')   ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')values('2020-10-24','game','1','-1','1','20')' at line 1
+org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`,)values('2020-10-24','game','1','-1','1','20')   ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')values('2020-10-24','game','1','-1','1','20')' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:523)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.lambda$doStatsTask$0(LoginTask.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.doStatsTask(LoginTask.java:46)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:77)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')values('2020-10-24','game','1','-1','1','20')' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1335)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2108)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:511)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:508)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 14 common frames omitted
+2020-10-26 15:11:54.0422 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:50]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`,)values('2020-10-24','game','1','-1','2','21')   
+2020-10-26 15:11:54.0436 [main] ERROR c.z.s.d.b.s.s.login.detail.LoginTask-[Line:55]>StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`,)values('2020-10-24','game','1','-1','2','21')   ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')values('2020-10-24','game','1','-1','2','21')' at line 1
+org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`,)values('2020-10-24','game','1','-1','2','21')   ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')values('2020-10-24','game','1','-1','2','21')' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:523)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.lambda$doStatsTask$0(LoginTask.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.doStatsTask(LoginTask.java:46)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:77)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')values('2020-10-24','game','1','-1','2','21')' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1335)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2108)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:511)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:508)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 14 common frames omitted
+2020-10-26 15:11:54.0437 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:50]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`,)values('2020-10-24','game','2','-1','1','1')   
+2020-10-26 15:11:54.0451 [main] ERROR c.z.s.d.b.s.s.login.detail.LoginTask-[Line:55]>StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`,)values('2020-10-24','game','2','-1','1','1')   ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')values('2020-10-24','game','2','-1','1','1')' at line 1
+org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`,)values('2020-10-24','game','2','-1','1','1')   ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')values('2020-10-24','game','2','-1','1','1')' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:523)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.lambda$doStatsTask$0(LoginTask.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.doStatsTask(LoginTask.java:46)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:77)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')values('2020-10-24','game','2','-1','1','1')' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1335)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2108)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:511)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:508)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 14 common frames omitted
+2020-10-26 15:11:54.0453 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-1 - Shutdown initiated...
+2020-10-26 15:11:54.0500 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-1 - Shutdown completed.
+2020-10-26 15:12:37.0487 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 14444 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 15:12:37.0489 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 15:12:37.0956 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 0.753 seconds (JVM running for 1.177)
+2020-10-26 15:12:37.0962 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:35]>select day , server_name , server_id, action_type,  count(distinct user_id) as count from `bi_login_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, action_type 
+2020-10-26 15:12:37.0980 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-1 - Starting...
+2020-10-26 15:12:38.0192 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-1 - Start completed.
+2020-10-26 15:12:40.0193 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:50]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','1','20')   
+2020-10-26 15:12:40.0268 [main] ERROR c.z.s.d.b.s.s.login.detail.LoginTask-[Line:55]>StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','1','20')   ]; nested exception is java.sql.SQLSyntaxErrorException: Table 'bi_data.login_count' doesn't exist
+org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','1','20')   ]; nested exception is java.sql.SQLSyntaxErrorException: Table 'bi_data.login_count' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:523)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.lambda$doStatsTask$0(LoginTask.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.doStatsTask(LoginTask.java:46)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:77)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'bi_data.login_count' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1335)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2108)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:511)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:508)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 14 common frames omitted
+2020-10-26 15:12:40.0269 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:50]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','2','21')   
+2020-10-26 15:12:40.0287 [main] ERROR c.z.s.d.b.s.s.login.detail.LoginTask-[Line:55]>StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','2','21')   ]; nested exception is java.sql.SQLSyntaxErrorException: Table 'bi_data.login_count' doesn't exist
+org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','2','21')   ]; nested exception is java.sql.SQLSyntaxErrorException: Table 'bi_data.login_count' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:523)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.lambda$doStatsTask$0(LoginTask.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.doStatsTask(LoginTask.java:46)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:77)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'bi_data.login_count' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1335)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2108)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:511)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:508)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 14 common frames omitted
+2020-10-26 15:12:40.0288 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:50]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','2','-1','1','1')   
+2020-10-26 15:12:40.0305 [main] ERROR c.z.s.d.b.s.s.login.detail.LoginTask-[Line:55]>StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','2','-1','1','1')   ]; nested exception is java.sql.SQLSyntaxErrorException: Table 'bi_data.login_count' doesn't exist
+org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','2','-1','1','1')   ]; nested exception is java.sql.SQLSyntaxErrorException: Table 'bi_data.login_count' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:523)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.lambda$doStatsTask$0(LoginTask.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.doStatsTask(LoginTask.java:46)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:77)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'bi_data.login_count' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1335)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2108)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:511)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:508)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 14 common frames omitted
+2020-10-26 15:12:40.0308 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-1 - Shutdown initiated...
+2020-10-26 15:12:40.0379 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-1 - Shutdown completed.
+2020-10-26 15:15:14.0403 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 9548 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 15:15:14.0405 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 15:15:14.0870 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 0.763 seconds (JVM running for 1.196)
+2020-10-26 15:15:14.0877 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:35]>select day , server_name , server_id, action_type,  count(distinct user_id) as count from `bi_login_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, action_type 
+2020-10-26 15:15:14.0885 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-1 - Starting...
+2020-10-26 15:15:15.0077 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-1 - Start completed.
+2020-10-26 15:15:15.0128 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','1','20')   
+2020-10-26 15:15:15.0133 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-2 - Starting...
+2020-10-26 15:15:15.0210 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-2 - Start completed.
+2020-10-26 15:15:15.0218 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','2','21')   
+2020-10-26 15:15:15.0225 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','2','-1','1','1')   
+2020-10-26 15:15:15.0235 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-2 - Shutdown initiated...
+2020-10-26 15:15:15.0241 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-2 - Shutdown completed.
+2020-10-26 15:15:15.0241 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-1 - Shutdown initiated...
+2020-10-26 15:15:15.0248 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-1 - Shutdown completed.
+2020-10-26 15:17:16.0077 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 39916 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 15:17:16.0080 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 15:17:16.0542 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 0.753 seconds (JVM running for 1.206)
+2020-10-26 15:17:16.0550 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:35]>select day , server_name , server_id, action_type,  count(distinct user_id) as count from `bi_login_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, action_type 
+2020-10-26 15:17:16.0558 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-1 - Starting...
+2020-10-26 15:17:16.0777 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-1 - Start completed.
+2020-10-26 15:17:16.0829 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','1','20')   
+2020-10-26 15:17:16.0834 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-2 - Starting...
+2020-10-26 15:17:16.0926 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-2 - Start completed.
+2020-10-26 15:17:16.0935 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','2','21')   
+2020-10-26 15:17:16.0944 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','2','-1','1','1')   
+2020-10-26 15:17:16.0952 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:35]>select day , server_name , server_id, item_id, op_code  sum(change) as count from `resource_count_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code 
+2020-10-26 15:17:17.0044 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [select day , server_name , server_id, item_id, op_code  sum(change) as count from `resource_count_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sum(change) as count from `resource_count_2020-10-24`  where day='2020-10-24' gr' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at com.zhuoqu.slg.data.bi.stats.sql.resource.detail.ResourceTask.doStatsTask(ResourceTask.java:36)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:79)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sum(change) as count from `resource_count_2020-10-24`  where day='2020-10-24' gr' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:439)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 13 common frames omitted
+2020-10-26 15:17:17.0049 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-2 - Shutdown initiated...
+2020-10-26 15:17:17.0101 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-2 - Shutdown completed.
+2020-10-26 15:17:17.0101 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-1 - Shutdown initiated...
+2020-10-26 15:17:17.0105 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-1 - Shutdown completed.
+2020-10-26 15:17:47.0517 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 39532 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 15:17:47.0520 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 15:17:47.0998 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 0.765 seconds (JVM running for 1.203)
+2020-10-26 15:17:48.0006 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:35]>select day , server_name , server_id, action_type,  count(distinct user_id) as count from `bi_login_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, action_type 
+2020-10-26 15:17:48.0014 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-1 - Starting...
+2020-10-26 15:17:48.0223 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-1 - Start completed.
+2020-10-26 15:17:48.0269 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','1','20')   
+2020-10-26 15:17:48.0281 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-2 - Starting...
+2020-10-26 15:17:48.0369 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-2 - Start completed.
+2020-10-26 15:17:48.0378 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','2','21')   
+2020-10-26 15:17:48.0386 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','2','-1','1','1')   
+2020-10-26 15:17:48.0395 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:35]>select day , server_name , server_id, item_id, op_code  sum(change) as count from `resource_count_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code 
+2020-10-26 15:17:48.0483 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [select day , server_name , server_id, item_id, op_code  sum(change) as count from `resource_count_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sum(change) as count from `resource_count_2020-10-24`  where day='2020-10-24' gr' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at com.zhuoqu.slg.data.bi.stats.sql.resource.detail.ResourceTask.doStatsTask(ResourceTask.java:36)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:79)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sum(change) as count from `resource_count_2020-10-24`  where day='2020-10-24' gr' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:439)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 13 common frames omitted
+2020-10-26 15:17:48.0485 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-2 - Shutdown initiated...
+2020-10-26 15:17:48.0555 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-2 - Shutdown completed.
+2020-10-26 15:17:48.0555 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-1 - Shutdown initiated...
+2020-10-26 15:17:48.0615 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-1 - Shutdown completed.
+2020-10-26 15:18:41.0180 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 23792 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 15:18:41.0183 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 15:18:41.0647 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 0.774 seconds (JVM running for 1.224)
+2020-10-26 15:18:41.0653 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:35]>select day , server_name , server_id, action_type,  count(distinct user_id) as count from `bi_login_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, action_type 
+2020-10-26 15:18:41.0662 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-1 - Starting...
+2020-10-26 15:18:41.0873 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-1 - Start completed.
+2020-10-26 15:18:41.0932 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','1','20')   
+2020-10-26 15:18:41.0936 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-2 - Starting...
+2020-10-26 15:18:42.0019 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-2 - Start completed.
+2020-10-26 15:18:42.0027 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','2','21')   
+2020-10-26 15:18:42.0035 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','2','-1','1','1')   
+2020-10-26 15:18:42.0043 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:35]>select day , server_name , server_id, item_id, op_code , sum(change) as count from `resource_count_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code 
+2020-10-26 15:18:42.0156 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [select day , server_name , server_id, item_id, op_code , sum(change) as count from `resource_count_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'change) as count from `resource_count_2020-10-24`  where day='2020-10-24' group ' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at com.zhuoqu.slg.data.bi.stats.sql.resource.detail.ResourceTask.doStatsTask(ResourceTask.java:36)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:79)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'change) as count from `resource_count_2020-10-24`  where day='2020-10-24' group ' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:439)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 13 common frames omitted
+2020-10-26 15:18:42.0160 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-2 - Shutdown initiated...
+2020-10-26 15:18:42.0206 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-2 - Shutdown completed.
+2020-10-26 15:18:42.0207 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-1 - Shutdown initiated...
+2020-10-26 15:18:42.0279 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-1 - Shutdown completed.
+2020-10-26 15:22:30.0768 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 26064 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 15:22:30.0770 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 15:22:31.0240 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 0.764 seconds (JVM running for 1.214)
+2020-10-26 15:22:31.0248 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:35]>select day , server_name , server_id, action_type,  count(distinct user_id) as count from `bi_login_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, action_type 
+2020-10-26 15:22:31.0256 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-1 - Starting...
+2020-10-26 15:22:31.0473 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-1 - Start completed.
+2020-10-26 15:22:31.0527 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','1','20')   
+2020-10-26 15:22:31.0532 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-2 - Starting...
+2020-10-26 15:22:31.0613 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-2 - Start completed.
+2020-10-26 15:22:31.0621 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','2','21')   
+2020-10-26 15:22:31.0629 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','2','-1','1','1')   
+2020-10-26 15:22:31.0636 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:35]>select day , server_name , server_id, item_id, op_code , sum(change) as count from `bi_resource_count_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code 
+2020-10-26 15:22:31.0739 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [select day , server_name , server_id, item_id, op_code , sum(change) as count from `bi_resource_count_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'change) as count from `bi_resource_count_2020-10-24`  where day='2020-10-24' gro' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at com.zhuoqu.slg.data.bi.stats.sql.resource.detail.ResourceTask.doStatsTask(ResourceTask.java:36)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:79)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'change) as count from `bi_resource_count_2020-10-24`  where day='2020-10-24' gro' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:439)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 13 common frames omitted
+2020-10-26 15:22:31.0742 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-2 - Shutdown initiated...
+2020-10-26 15:22:31.0782 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-2 - Shutdown completed.
+2020-10-26 15:22:31.0782 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-1 - Shutdown initiated...
+2020-10-26 15:22:31.0854 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-1 - Shutdown completed.
+2020-10-26 15:23:27.0454 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 10832 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 15:23:27.0457 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 15:23:27.0920 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 0.763 seconds (JVM running for 1.207)
+2020-10-26 15:23:27.0927 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:35]>select day , server_name , server_id, action_type,  count(distinct user_id) as count from `bi_login_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, action_type 
+2020-10-26 15:23:27.0935 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-1 - Starting...
+2020-10-26 15:23:28.0170 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-1 - Start completed.
+2020-10-26 15:23:28.0225 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','1','20')   
+2020-10-26 15:23:28.0229 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-2 - Starting...
+2020-10-26 15:23:28.0330 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-2 - Start completed.
+2020-10-26 15:23:28.0340 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','2','21')   
+2020-10-26 15:23:28.0349 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','2','-1','1','1')   
+2020-10-26 15:23:28.0359 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:35]>select day , server_name , server_id, item_id, op_code , sum(change) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code 
+2020-10-26 15:23:28.0460 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [select day , server_name , server_id, item_id, op_code , sum(change) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'change) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by ' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at com.zhuoqu.slg.data.bi.stats.sql.resource.detail.ResourceTask.doStatsTask(ResourceTask.java:36)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:79)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'change) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by ' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:439)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 13 common frames omitted
+2020-10-26 15:23:28.0463 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-2 - Shutdown initiated...
+2020-10-26 15:23:28.0500 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-2 - Shutdown completed.
+2020-10-26 15:23:28.0500 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-1 - Shutdown initiated...
+2020-10-26 15:23:28.0551 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-1 - Shutdown completed.
+2020-10-26 15:31:14.0464 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 17612 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 15:31:14.0467 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 15:31:14.0947 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 0.781 seconds (JVM running for 1.246)
+2020-10-26 15:31:14.0956 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:35]>select day , server_name , server_id, action_type,  count(distinct user_id) as count from `bi_login_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, action_type 
+2020-10-26 15:31:14.0963 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-1 - Starting...
+2020-10-26 15:31:15.0177 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-1 - Start completed.
+2020-10-26 15:31:15.0225 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','1','20')   
+2020-10-26 15:31:15.0229 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-2 - Starting...
+2020-10-26 15:31:15.0322 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-2 - Start completed.
+2020-10-26 15:31:15.0330 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','2','21')   
+2020-10-26 15:31:15.0338 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','2','-1','1','1')   
+2020-10-26 15:31:15.0346 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:35]>select day , server_name , server_id, item_id, op_code , sum(change) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code 
+2020-10-26 15:31:15.0439 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [select day , server_name , server_id, item_id, op_code , sum(change) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'change) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by ' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at com.zhuoqu.slg.data.bi.stats.sql.resource.detail.ResourceTask.doStatsTask(ResourceTask.java:36)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:79)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'change) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by ' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:439)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 13 common frames omitted
+2020-10-26 15:31:15.0441 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-2 - Shutdown initiated...
+2020-10-26 15:31:15.0501 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-2 - Shutdown completed.
+2020-10-26 15:31:15.0501 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-1 - Shutdown initiated...
+2020-10-26 15:31:15.0530 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-1 - Shutdown completed.
+2020-10-26 15:34:01.0055 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 8464 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 15:34:01.0057 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 15:34:01.0471 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 0.661 seconds (JVM running for 0.989)
+2020-10-26 15:34:01.0477 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:35]>select day , server_name , server_id, action_type,  count(distinct user_id) as count from `bi_login_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, action_type 
+2020-10-26 15:34:01.0485 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-1 - Starting...
+2020-10-26 15:34:01.0695 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-1 - Start completed.
+2020-10-26 15:34:01.0739 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','1','20')   
+2020-10-26 15:34:01.0743 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-2 - Starting...
+2020-10-26 15:34:01.0842 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-2 - Start completed.
+2020-10-26 15:34:01.0851 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','2','21')   
+2020-10-26 15:34:01.0861 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','2','-1','1','1')   
+2020-10-26 15:34:01.0870 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:35]>select day , server_name , server_id, item_id, op_code , sum(`change`) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code 
+2020-10-26 15:34:01.0952 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: org.springframework.dao.DataIntegrityViolationException: StatementCallback; SQL [select day , server_name , server_id, item_id, op_code , sum(`change`) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code ]; Value '4,000,000,000' is outside of valid range for type java.lang.Integer; nested exception is java.sql.SQLDataException: Value '4,000,000,000' is outside of valid range for type java.lang.Integer
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:84)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at com.zhuoqu.slg.data.bi.stats.sql.resource.detail.ResourceTask.doStatsTask(ResourceTask.java:36)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:79)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+Caused by: java.sql.SQLDataException: Value '4,000,000,000' is outside of valid range for type java.lang.Integer
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:114)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:92)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getObject(ResultSetImpl.java:1393)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:797)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getInt(HikariProxyResultSet.java)
+	at com.zhuoqu.slg.data.bi.stats.mapper.ResourceMapper.mapRow(ResourceMapper.java:31)
+	at com.zhuoqu.slg.data.bi.stats.mapper.ResourceMapper.mapRow(ResourceMapper.java:15)
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:94)
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:61)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:440)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 13 common frames omitted
+Caused by: com.mysql.cj.exceptions.NumberOutOfRange: Value '4,000,000,000' is outside of valid range for type java.lang.Integer
+	at com.mysql.cj.result.IntegerValueFactory.createFromBigDecimal(IntegerValueFactory.java:71)
+	at com.mysql.cj.result.IntegerValueFactory.createFromBigDecimal(IntegerValueFactory.java:44)
+	at com.mysql.cj.protocol.a.MysqlTextValueDecoder.decodeDecimal(MysqlTextValueDecoder.java:130)
+	at com.mysql.cj.protocol.result.AbstractResultsetRow.decodeAndCreateReturnValue(AbstractResultsetRow.java:121)
+	at com.mysql.cj.protocol.result.AbstractResultsetRow.getValueFromBytes(AbstractResultsetRow.java:241)
+	at com.mysql.cj.protocol.a.result.ByteArrayRow.getValue(ByteArrayRow.java:91)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getObject(ResultSetImpl.java:1296)
+	... 21 common frames omitted
+2020-10-26 15:34:01.0955 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-2 - Shutdown initiated...
+2020-10-26 15:34:02.0013 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-2 - Shutdown completed.
+2020-10-26 15:34:02.0013 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-1 - Shutdown initiated...
+2020-10-26 15:34:02.0023 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-1 - Shutdown completed.
+2020-10-26 15:35:04.0814 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 27300 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 15:35:04.0817 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 15:35:05.0270 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 0.763 seconds (JVM running for 1.082)
+2020-10-26 15:35:05.0275 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:35]>select day , server_name , server_id, action_type,  count(distinct user_id) as count from `bi_login_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, action_type 
+2020-10-26 15:35:05.0282 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-1 - Starting...
+2020-10-26 15:35:05.0503 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-1 - Start completed.
+2020-10-26 15:35:05.0550 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','1','20')   
+2020-10-26 15:35:05.0554 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-2 - Starting...
+2020-10-26 15:35:05.0650 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-2 - Start completed.
+2020-10-26 15:35:05.0660 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','2','21')   
+2020-10-26 15:35:05.0669 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','2','-1','1','1')   
+2020-10-26 15:35:05.0678 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:35]>select day , server_name , server_id, item_id, op_code , sum(`change`) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code 
+2020-10-26 15:35:05.0699 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','101','200001','400000')
+2020-10-26 15:35:05.0709 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','101','200401','-15000')
+2020-10-26 15:35:05.0718 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','101','200500','14')
+2020-10-26 15:35:05.0727 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','101','200700','12080')
+2020-10-26 15:35:05.0736 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','102','200001','4000000000')
+2020-10-26 15:35:05.0746 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','102','200200','-5400')
+2020-10-26 15:35:05.0756 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','102','200202','-422700')
+2020-10-26 15:35:05.0766 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','102','200401','10000000')
+2020-10-26 15:35:05.0776 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','102','200500','-96700')
+2020-10-26 15:35:05.0784 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','102','200600','-60000')
+2020-10-26 15:35:05.0794 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','106','200001','4000000000')
+2020-10-26 15:35:05.0803 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','106','200101','-2100')
+2020-10-26 15:35:05.0813 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','106','200401','100000')
+2020-10-26 15:35:05.0821 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','106','200500','94350')
+2020-10-26 15:35:05.0830 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','106','200600','74600')
+2020-10-26 15:35:05.0839 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','107','200001','4000000000')
+2020-10-26 15:35:05.0848 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','107','200102','-19000')
+2020-10-26 15:35:05.0857 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','107','200401','100000')
+2020-10-26 15:35:05.0866 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','107','200500','99')
+2020-10-26 15:35:05.0875 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','405','200001','4000')
+2020-10-26 15:35:05.0884 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','405','200200','-54')
+2020-10-26 15:35:05.0892 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','405','200401','50')
+2020-10-26 15:35:05.0901 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','406','200001','4000')
+2020-10-26 15:35:05.0910 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','406','200200','-25')
+2020-10-26 15:35:05.0919 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','406','200401','10')
+2020-10-26 15:35:05.0929 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','410','200001','4000')
+2020-10-26 15:35:05.0939 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','411','200001','4000')
+2020-10-26 15:35:05.0947 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40001','200001','4000')
+2020-10-26 15:35:05.0956 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40001','200103','-170')
+2020-10-26 15:35:05.0965 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40008','200001','4000')
+2020-10-26 15:35:05.0974 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40008','200103','-10')
+2020-10-26 15:35:05.0983 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40009','200001','4000')
+2020-10-26 15:35:05.0992 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40009','200103','-10')
+2020-10-26 15:35:06.0001 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40010','200001','4000')
+2020-10-26 15:35:06.0010 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40017','200001','4000')
+2020-10-26 15:35:06.0018 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40017','200100','-1240')
+2020-10-26 15:35:06.0028 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40018','200001','4000')
+2020-10-26 15:35:06.0036 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40018','200100','-240')
+2020-10-26 15:35:06.0045 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40019','200001','4000')
+2020-10-26 15:35:06.0054 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40019','200100','-120')
+2020-10-26 15:35:06.0062 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40020','200001','4000')
+2020-10-26 15:35:06.0072 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40020','200100','-880')
+2020-10-26 15:35:06.0081 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40026','200001','4000')
+2020-10-26 15:35:06.0090 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40026','200100','-200')
+2020-10-26 15:35:06.0099 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40027','200001','4000')
+2020-10-26 15:35:06.0108 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40027','200100','-80')
+2020-10-26 15:35:06.0117 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','2','-1','102','200600','-12000')
+2020-10-26 15:35:06.0125 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:49]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','2','-1','106','200600','13000')
+2020-10-26 15:35:06.0135 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-2 - Shutdown initiated...
+2020-10-26 15:35:06.0174 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-2 - Shutdown completed.
+2020-10-26 15:35:06.0174 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-1 - Shutdown initiated...
+2020-10-26 15:35:06.0248 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-1 - Shutdown completed.
+2020-10-26 15:39:06.0855 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 14296 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 15:39:06.0857 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 15:39:07.0373 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 0.775 seconds (JVM running for 1.083)
+2020-10-26 15:39:07.0380 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:35]>select day , server_name , server_id, action_type,  count(distinct user_id) as count from `bi_login_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, action_type 
+2020-10-26 15:39:07.0387 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-1 - Starting...
+2020-10-26 15:39:07.0567 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-1 - Start completed.
+2020-10-26 15:39:07.0596 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','1','20')   
+2020-10-26 15:39:07.0600 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-2 - Starting...
+2020-10-26 15:39:07.0683 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-2 - Start completed.
+2020-10-26 15:39:07.0692 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','2','21')   
+2020-10-26 15:39:07.0700 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','2','-1','1','1')   
+2020-10-26 15:39:07.0707 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:45]>select day , server_name , server_id, item_id, op_code , sum(`change`) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code 
+2020-10-26 15:39:07.0725 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:54]>select day , server_name , server_id, item_id,  sum(`change`) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id 
+2020-10-26 15:39:07.0794 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: org.springframework.dao.TransientDataAccessResourceException: StatementCallback; SQL [select day , server_name , server_id, item_id,  sum(`change`) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id ]; Column Index out of range, 6 > 5. ; nested exception is java.sql.SQLException: Column Index out of range, 6 > 5. 
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:110)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at com.zhuoqu.slg.data.bi.stats.sql.resource.detail.ResourceTask.doStatsTask(ResourceTask.java:55)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:79)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+Caused by: java.sql.SQLException: Column Index out of range, 6 > 5. 
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.checkColumnBounds(ResultSetImpl.java:469)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getObject(ResultSetImpl.java:1300)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getLong(ResultSetImpl.java:823)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getLong(HikariProxyResultSet.java)
+	at com.zhuoqu.slg.data.bi.stats.mapper.ResourceMapper.mapRow(ResourceMapper.java:31)
+	at com.zhuoqu.slg.data.bi.stats.mapper.ResourceMapper.mapRow(ResourceMapper.java:15)
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:94)
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:61)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:440)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 13 common frames omitted
+2020-10-26 15:39:07.0797 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-2 - Shutdown initiated...
+2020-10-26 15:39:07.0868 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-2 - Shutdown completed.
+2020-10-26 15:39:07.0869 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-1 - Shutdown initiated...
+2020-10-26 15:39:07.0909 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-1 - Shutdown completed.
+2020-10-26 15:40:03.0260 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 25368 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 15:40:03.0262 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 15:40:03.0704 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 0.696 seconds (JVM running for 1.013)
+2020-10-26 15:40:03.0709 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:35]>select day , server_name , server_id, action_type,  count(distinct user_id) as count from `bi_login_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, action_type 
+2020-10-26 15:40:03.0717 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-1 - Starting...
+2020-10-26 15:40:03.0905 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-1 - Start completed.
+2020-10-26 15:40:03.0937 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','1','20')   
+2020-10-26 15:40:03.0940 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-2 - Starting...
+2020-10-26 15:40:04.0020 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-2 - Start completed.
+2020-10-26 15:40:04.0028 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','2','21')   
+2020-10-26 15:40:04.0035 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','2','-1','1','1')   
+2020-10-26 15:40:04.0043 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:45]>select day , server_name , server_id, item_id, op_code , sum(`change`) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code 
+2020-10-26 15:40:04.0066 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:54]>select day , server_name , server_id, item_id, op_code as -1, sum(`change`) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code 
+2020-10-26 15:40:04.0141 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [select day , server_name , server_id, item_id, op_code as -1, sum(`change`) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, sum(`change`) as count from `bi_resource_2020-10-24`  where day='2020-10-24'' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at com.zhuoqu.slg.data.bi.stats.sql.resource.detail.ResourceTask.doStatsTask(ResourceTask.java:55)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:79)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, sum(`change`) as count from `bi_resource_2020-10-24`  where day='2020-10-24'' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:439)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 13 common frames omitted
+2020-10-26 15:40:04.0143 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-2 - Shutdown initiated...
+2020-10-26 15:40:04.0198 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-2 - Shutdown completed.
+2020-10-26 15:40:04.0198 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-1 - Shutdown initiated...
+2020-10-26 15:40:04.0219 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-1 - Shutdown completed.
+2020-10-26 15:40:38.0332 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 9444 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 15:40:38.0334 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 15:40:38.0752 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 0.667 seconds (JVM running for 0.974)
+2020-10-26 15:40:38.0760 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:35]>select day , server_name , server_id, action_type,  count(distinct user_id) as count from `bi_login_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, action_type 
+2020-10-26 15:40:38.0769 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-1 - Starting...
+2020-10-26 15:40:38.0969 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-1 - Start completed.
+2020-10-26 15:40:39.0008 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','1','20')   
+2020-10-26 15:40:39.0012 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:110]>HikariPool-2 - Starting...
+2020-10-26 15:40:39.0110 [main] INFO  com.zaxxer.hikari.HikariDataSource-[Line:123]>HikariPool-2 - Start completed.
+2020-10-26 15:40:39.0119 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','2','21')   
+2020-10-26 15:40:39.0128 [main] INFO  c.z.s.d.b.s.s.login.detail.LoginTask-[Line:51]>replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','2','-1','1','1')   
+2020-10-26 15:40:39.0136 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:45]>select day , server_name , server_id, item_id, op_code , sum(`change`) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code 
+2020-10-26 15:40:39.0156 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:54]>select day , server_name , server_id, item_id, op_code as '-1', sum(`change`) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code 
+2020-10-26 15:40:39.0174 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','101','200001','400000')
+2020-10-26 15:40:39.0183 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','101','200401','-15000')
+2020-10-26 15:40:39.0191 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','101','200500','14')
+2020-10-26 15:40:39.0201 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','101','200700','12080')
+2020-10-26 15:40:39.0210 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','102','200001','4000000000')
+2020-10-26 15:40:39.0219 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','102','200200','-5400')
+2020-10-26 15:40:39.0228 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','102','200202','-422700')
+2020-10-26 15:40:39.0237 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','102','200401','10000000')
+2020-10-26 15:40:39.0245 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','102','200500','-96700')
+2020-10-26 15:40:39.0255 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','102','200600','-60000')
+2020-10-26 15:40:39.0263 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','106','200001','4000000000')
+2020-10-26 15:40:39.0272 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','106','200101','-2100')
+2020-10-26 15:40:39.0281 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','106','200401','100000')
+2020-10-26 15:40:39.0290 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','106','200500','94350')
+2020-10-26 15:40:39.0298 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','106','200600','74600')
+2020-10-26 15:40:39.0307 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','107','200001','4000000000')
+2020-10-26 15:40:39.0316 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','107','200102','-19000')
+2020-10-26 15:40:39.0324 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','107','200401','100000')
+2020-10-26 15:40:39.0333 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','107','200500','99')
+2020-10-26 15:40:39.0341 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','405','200001','4000')
+2020-10-26 15:40:39.0349 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','405','200200','-54')
+2020-10-26 15:40:39.0359 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','405','200401','50')
+2020-10-26 15:40:39.0367 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','406','200001','4000')
+2020-10-26 15:40:39.0376 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','406','200200','-25')
+2020-10-26 15:40:39.0384 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','406','200401','10')
+2020-10-26 15:40:39.0393 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','410','200001','4000')
+2020-10-26 15:40:39.0403 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','411','200001','4000')
+2020-10-26 15:40:39.0412 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40001','200001','4000')
+2020-10-26 15:40:39.0421 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40001','200103','-170')
+2020-10-26 15:40:39.0429 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40008','200001','4000')
+2020-10-26 15:40:39.0438 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40008','200103','-10')
+2020-10-26 15:40:39.0447 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40009','200001','4000')
+2020-10-26 15:40:39.0456 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40009','200103','-10')
+2020-10-26 15:40:39.0465 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40010','200001','4000')
+2020-10-26 15:40:39.0473 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40017','200001','4000')
+2020-10-26 15:40:39.0481 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40017','200100','-1240')
+2020-10-26 15:40:39.0490 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40018','200001','4000')
+2020-10-26 15:40:39.0499 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40018','200100','-240')
+2020-10-26 15:40:39.0509 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40019','200001','4000')
+2020-10-26 15:40:39.0519 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40019','200100','-120')
+2020-10-26 15:40:39.0529 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40020','200001','4000')
+2020-10-26 15:40:39.0538 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40020','200100','-880')
+2020-10-26 15:40:39.0546 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40026','200001','4000')
+2020-10-26 15:40:39.0555 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40026','200100','-200')
+2020-10-26 15:40:39.0564 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40027','200001','4000')
+2020-10-26 15:40:39.0572 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40027','200100','-80')
+2020-10-26 15:40:39.0581 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','2','-1','102','200600','-12000')
+2020-10-26 15:40:39.0590 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','2','-1','106','200600','13000')
+2020-10-26 15:40:39.0598 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','101','200001','400000')
+2020-10-26 15:40:39.0607 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','101','200401','-15000')
+2020-10-26 15:40:39.0615 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','101','200500','14')
+2020-10-26 15:40:39.0624 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','101','200700','12080')
+2020-10-26 15:40:39.0632 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','102','200001','4000000000')
+2020-10-26 15:40:39.0647 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','102','200200','-5400')
+2020-10-26 15:40:39.0655 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','102','200202','-422700')
+2020-10-26 15:40:39.0664 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','102','200401','10000000')
+2020-10-26 15:40:39.0673 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','102','200500','-96700')
+2020-10-26 15:40:39.0681 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','102','200600','-60000')
+2020-10-26 15:40:39.0690 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','106','200001','4000000000')
+2020-10-26 15:40:39.0698 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','106','200101','-2100')
+2020-10-26 15:40:39.0707 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','106','200401','100000')
+2020-10-26 15:40:39.0715 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','106','200500','94350')
+2020-10-26 15:40:39.0725 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','106','200600','74600')
+2020-10-26 15:40:39.0733 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','107','200001','4000000000')
+2020-10-26 15:40:39.0742 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','107','200102','-19000')
+2020-10-26 15:40:39.0749 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','107','200401','100000')
+2020-10-26 15:40:39.0758 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','107','200500','99')
+2020-10-26 15:40:39.0768 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','405','200001','4000')
+2020-10-26 15:40:39.0777 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','405','200200','-54')
+2020-10-26 15:40:39.0787 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','405','200401','50')
+2020-10-26 15:40:39.0796 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','406','200001','4000')
+2020-10-26 15:40:39.0805 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','406','200200','-25')
+2020-10-26 15:40:39.0814 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','406','200401','10')
+2020-10-26 15:40:39.0822 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','410','200001','4000')
+2020-10-26 15:40:39.0830 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','411','200001','4000')
+2020-10-26 15:40:39.0841 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40001','200001','4000')
+2020-10-26 15:40:39.0851 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40001','200103','-170')
+2020-10-26 15:40:39.0860 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40008','200001','4000')
+2020-10-26 15:40:39.0869 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40008','200103','-10')
+2020-10-26 15:40:39.0879 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40009','200001','4000')
+2020-10-26 15:40:39.0889 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40009','200103','-10')
+2020-10-26 15:40:39.0898 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40010','200001','4000')
+2020-10-26 15:40:39.0906 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40017','200001','4000')
+2020-10-26 15:40:39.0915 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40017','200100','-1240')
+2020-10-26 15:40:39.0923 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40018','200001','4000')
+2020-10-26 15:40:39.0932 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40018','200100','-240')
+2020-10-26 15:40:39.0941 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40019','200001','4000')
+2020-10-26 15:40:39.0949 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40019','200100','-120')
+2020-10-26 15:40:39.0958 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40020','200001','4000')
+2020-10-26 15:40:39.0966 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40020','200100','-880')
+2020-10-26 15:40:39.0975 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40026','200001','4000')
+2020-10-26 15:40:39.0984 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40026','200100','-200')
+2020-10-26 15:40:39.0992 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40027','200001','4000')
+2020-10-26 15:40:40.0001 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','1','-1','40027','200100','-80')
+2020-10-26 15:40:40.0011 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','2','-1','102','200600','-12000')
+2020-10-26 15:40:40.0019 [main] INFO  c.z.s.d.b.s.s.r.detail.ResourceTask-[Line:75]>replace into `resource_count`(`day`,`server_name`,`server_id`,`channel_id`,`resource_id`,`op_code` , `count`)values('2020-10-24','game','2','-1','106','200600','13000')
+2020-10-26 15:40:40.0030 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-2 - Shutdown initiated...
+2020-10-26 15:40:40.0037 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-2 - Shutdown completed.
+2020-10-26 15:40:40.0037 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-[Line:350]>HikariPool-1 - Shutdown initiated...
+2020-10-26 15:40:40.0039 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-[Line:352]>HikariPool-1 - Shutdown completed.

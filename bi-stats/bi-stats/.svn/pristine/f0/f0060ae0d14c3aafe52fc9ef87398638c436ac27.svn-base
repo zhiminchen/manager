@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhuoqu.slg.data.bi.stats.mybatis.dao.LoginTypeMapper">
+  <resultMap id="BaseResultMap" type="com.zhuoqu.slg.data.bi.stats.mybatis.entity.LoginType">
+    <id column="type" jdbcType="INTEGER" property="type" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from login_type
+    where `type` = #{type,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.zhuoqu.slg.data.bi.stats.mybatis.entity.LoginType">
+    insert into login_type (`type`, `name`)
+    values (#{type,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zhuoqu.slg.data.bi.stats.mybatis.entity.LoginType">
+    update login_type
+    set `name` = #{name,jdbcType=VARCHAR}
+    where `type` = #{type,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select `type`, `name`
+    from login_type
+    where `type` = #{type,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select `type`, `name`
+    from login_type
+  </select>
+  <resultMap id="BaseResultMap" type="com.zhuoqu.slg.data.bi.stats.mybatis.entity.LoginType">
+    <id column="type" jdbcType="INTEGER" property="type" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from login_type
+    where `type` = #{type,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.zhuoqu.slg.data.bi.stats.mybatis.entity.LoginType">
+    insert into login_type (`type`, `name`)
+    values (#{type,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zhuoqu.slg.data.bi.stats.mybatis.entity.LoginType">
+    update login_type
+    set `name` = #{name,jdbcType=VARCHAR}
+    where `type` = #{type,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select `type`, `name`
+    from login_type
+    where `type` = #{type,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select `type`, `name`
+    from login_type
+  </select>
+  <resultMap id="BaseResultMap" type="com.zhuoqu.slg.data.bi.stats.mybatis.entity.LoginType">
+    <id column="type" jdbcType="INTEGER" property="type" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from login_type
+    where `type` = #{type,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.zhuoqu.slg.data.bi.stats.mybatis.entity.LoginType">
+    insert into login_type (`type`, `name`)
+    values (#{type,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zhuoqu.slg.data.bi.stats.mybatis.entity.LoginType">
+    update login_type
+    set `name` = #{name,jdbcType=VARCHAR}
+    where `type` = #{type,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select `type`, `name`
+    from login_type
+    where `type` = #{type,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select `type`, `name`
+    from login_type
+  </select>
+  <resultMap id="BaseResultMap" type="com.zhuoqu.slg.data.bi.stats.mybatis.entity.LoginType">
+    <id column="type" jdbcType="INTEGER" property="type" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from login_type
+    where `type` = #{type,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.zhuoqu.slg.data.bi.stats.mybatis.entity.LoginType">
+    insert into login_type (`type`, `name`)
+    values (#{type,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zhuoqu.slg.data.bi.stats.mybatis.entity.LoginType">
+    update login_type
+    set `name` = #{name,jdbcType=VARCHAR}
+    where `type` = #{type,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select `type`, `name`
+    from login_type
+    where `type` = #{type,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select `type`, `name`
+    from login_type
+  </select>
+  <resultMap id="BaseResultMap" type="com.zhuoqu.slg.data.bi.stats.mybatis.entity.LoginType">
+    <id column="type" jdbcType="INTEGER" property="type" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from login_type
+    where `type` = #{type,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.zhuoqu.slg.data.bi.stats.mybatis.entity.LoginType">
+    insert into login_type (`type`, `name`)
+    values (#{type,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zhuoqu.slg.data.bi.stats.mybatis.entity.LoginType">
+    update login_type
+    set `name` = #{name,jdbcType=VARCHAR}
+    where `type` = #{type,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select `type`, `name`
+    from login_type
+    where `type` = #{type,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select `type`, `name`
+    from login_type
+  </select>
+  <resultMap id="BaseResultMap" type="com.zhuoqu.slg.data.bi.stats.mybatis.entity.LoginType">
+    <id column="type" jdbcType="INTEGER" property="type" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from login_type
+    where `type` = #{type,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.zhuoqu.slg.data.bi.stats.mybatis.entity.LoginType">
+    insert into login_type (`type`, `name`)
+    values (#{type,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zhuoqu.slg.data.bi.stats.mybatis.entity.LoginType">
+    update login_type
+    set `name` = #{name,jdbcType=VARCHAR}
+    where `type` = #{type,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select `type`, `name`
+    from login_type
+    where `type` = #{type,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select `type`, `name`
+    from login_type
+  </select>
+</mapper>

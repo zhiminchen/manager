@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhuoqu.slg.data.bi.stats.mybatis.dao.ChannelMapMapper">
+  <resultMap id="BaseResultMap" type="com.zhuoqu.slg.data.bi.stats.mybatis.entity.ChannelMap">
+    <id column="channle_name" jdbcType="VARCHAR" property="channleName" />
+    <result column="channel_id" jdbcType="INTEGER" property="channelId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from channel_map
+    where channle_name = #{channleName,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.zhuoqu.slg.data.bi.stats.mybatis.entity.ChannelMap">
+    insert into channel_map (channle_name, channel_id)
+    values (#{channleName,jdbcType=VARCHAR}, #{channelId,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zhuoqu.slg.data.bi.stats.mybatis.entity.ChannelMap">
+    update channel_map
+    set channel_id = #{channelId,jdbcType=INTEGER}
+    where channle_name = #{channleName,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select channle_name, channel_id
+    from channel_map
+    where channle_name = #{channleName,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select channle_name, channel_id
+    from channel_map
+  </select>
+</mapper>

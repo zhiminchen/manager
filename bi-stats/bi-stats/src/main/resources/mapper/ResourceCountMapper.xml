@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhuoqu.slg.data.bi.stats.mybatis.dao.ResourceCountMapper">
+  <resultMap id="BaseResultMap" type="com.zhuoqu.slg.data.bi.stats.mybatis.entity.ResourceCount">
+    <id column="day" jdbcType="DATE" property="day" />
+    <id column="server_name" jdbcType="VARCHAR" property="serverName" />
+    <id column="server_id" jdbcType="VARCHAR" property="serverId" />
+    <id column="channel_id" jdbcType="INTEGER" property="channelId" />
+    <id column="resource_id" jdbcType="INTEGER" property="resourceId" />
+    <id column="op_code" jdbcType="INTEGER" property="opCode" />
+    <result column="count" jdbcType="BIGINT" property="count" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from resource_count
+    where `day` = #{day,jdbcType=DATE}
+      and `server_name` = #{serverName,jdbcType=VARCHAR}
+      and server_id = #{serverId,jdbcType=VARCHAR}
+      and channel_id = #{channelId,jdbcType=INTEGER}
+      and resource_id = #{resourceId,jdbcType=INTEGER}
+      and op_code = #{opCode,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.zhuoqu.slg.data.bi.stats.mybatis.entity.ResourceCount">
+    insert into resource_count (`day`, `server_name`, server_id, 
+      channel_id, resource_id, op_code, 
+      `count`)
+    values (#{day,jdbcType=DATE}, #{serverName,jdbcType=VARCHAR}, #{serverId,jdbcType=VARCHAR}, 
+      #{channelId,jdbcType=INTEGER}, #{resourceId,jdbcType=INTEGER}, #{opCode,jdbcType=INTEGER}, 
+      #{count,jdbcType=BIGINT})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zhuoqu.slg.data.bi.stats.mybatis.entity.ResourceCount">
+    update resource_count
+    set `count` = #{count,jdbcType=BIGINT}
+    where `day` = #{day,jdbcType=DATE}
+      and `server_name` = #{serverName,jdbcType=VARCHAR}
+      and server_id = #{serverId,jdbcType=VARCHAR}
+      and channel_id = #{channelId,jdbcType=INTEGER}
+      and resource_id = #{resourceId,jdbcType=INTEGER}
+      and op_code = #{opCode,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    select `day`, `server_name`, server_id, channel_id, resource_id, op_code, `count`
+    from resource_count
+    where `day` = #{day,jdbcType=DATE}
+      and `server_name` = #{serverName,jdbcType=VARCHAR}
+      and server_id = #{serverId,jdbcType=VARCHAR}
+      and channel_id = #{channelId,jdbcType=INTEGER}
+      and resource_id = #{resourceId,jdbcType=INTEGER}
+      and op_code = #{opCode,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select `day`, `server_name`, server_id, channel_id, resource_id, op_code, `count`
+    from resource_count
+  </select>
+</mapper>

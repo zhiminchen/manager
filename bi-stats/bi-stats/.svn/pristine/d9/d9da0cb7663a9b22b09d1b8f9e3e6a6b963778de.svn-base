@@ -1,0 +1,13 @@
+package com.zhuoqu.slg.data.bi.stats;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class BiStatsApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

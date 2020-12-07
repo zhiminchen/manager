@@ -1,0 +1,617 @@
+2020-10-27 11:18:54.0691 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 31884 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-27 11:18:54.0695 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-27 11:18:55.0289 [main] WARN  o.m.s.mapper.ClassPathMapperScanner-[Line:44]>No MyBatis mapper was found in '[com.zhuoqu.slg.data.bi.stats]' package. Please check your configuration.
+2020-10-27 11:18:55.0413 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure-[Line:56]>Init DruidDataSource
+2020-10-27 11:18:55.0624 [main] INFO  c.alibaba.druid.pool.DruidDataSource-[Line:983]>{dataSource-1} inited
+2020-10-27 11:18:55.0798 [task-1] INFO  org.hibernate.Version-[Line:44]>HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-27 11:18:55.0957 [task-1] INFO  o.h.annotations.common.Version-[Line:49]>HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-27 11:18:56.0358 [task-1] INFO  org.hibernate.dialect.Dialect-[Line:170]>HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-10-27 11:18:56.0816 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator-[Line:52]>HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-27 11:18:56.0826 [main] INFO  c.alibaba.druid.pool.DruidDataSource-[Line:2024]>{dataSource-1} closing ...
+2020-10-27 11:18:56.0828 [main] INFO  c.alibaba.druid.pool.DruidDataSource-[Line:2096]>{dataSource-1} closed
+2020-10-27 11:18:56.0836 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.zhuoqu.slg.data.bi.stats.mybatis.dao.ChannelMapMapper.BaseResultMap
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.zhuoqu.slg.data.bi.stats.mybatis.dao.ChannelMapMapper.BaseResultMap
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 19 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.zhuoqu.slg.data.bi.stats.mybatis.dao.ChannelMapMapper.BaseResultMap
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:612)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:490)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:632)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:180)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$2faf94aa.CGLIB$sqlSessionFactory$1(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$2faf94aa$$FastClassBySpringCGLIB$$d7dfbfc2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$2faf94aa.sqlSessionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 20 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.zhuoqu.slg.data.bi.stats.mybatis.dao.ChannelMapMapper.BaseResultMap
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:610)
+	... 33 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.zhuoqu.slg.data.bi.stats.mybatis.dao.ChannelMapMapper.BaseResultMap
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:992)
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:948)
+	at org.apache.ibatis.session.Configuration.addResultMap(Configuration.java:704)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addResultMap(MapperBuilderAssistant.java:209)
+	at org.apache.ibatis.builder.ResultMapResolver.resolve(ResultMapResolver.java:47)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:289)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119)
+	... 35 common frames omitted
+2020-10-27 11:21:20.0914 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 23492 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-27 11:21:20.0916 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-27 11:21:21.0486 [main] WARN  o.m.s.mapper.ClassPathMapperScanner-[Line:44]>No MyBatis mapper was found in '[com.zhuoqu.slg.data.bi.stats]' package. Please check your configuration.
+2020-10-27 11:21:21.0634 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure-[Line:56]>Init DruidDataSource
+2020-10-27 11:21:21.0764 [main] INFO  c.alibaba.druid.pool.DruidDataSource-[Line:983]>{dataSource-1} inited
+2020-10-27 11:21:21.0946 [task-1] INFO  org.hibernate.Version-[Line:44]>HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-27 11:21:22.0161 [task-1] INFO  o.h.annotations.common.Version-[Line:49]>HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-27 11:21:22.0455 [task-1] INFO  org.hibernate.dialect.Dialect-[Line:170]>HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-10-27 11:21:22.0457 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 11:21:22.0485 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 11:21:22.0485 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 11:21:22.0486 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 11:21:22.0486 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 11:21:22.0486 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-10-27 11:21:22.0486 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 11:21:22.0486 [main] INFO  org.quartz.core.QuartzScheduler-[Line:2293]>JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@490c7a83
+2020-10-27 11:21:22.0506 [main] INFO  org.quartz.core.QuartzScheduler-[Line:547]>Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-10-27 11:21:22.0517 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 1.877 seconds (JVM running for 3.023)
+2020-10-27 11:21:23.0126 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator-[Line:52]>HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-27 11:22:12.0325 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-10-27 11:22:12.0326 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler-[Line:666]>Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-10-27 11:22:12.0326 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-10-27 11:22:12.0326 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler-[Line:740]>Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-10-27 11:22:12.0330 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource-[Line:2024]>{dataSource-1} closing ...
+2020-10-27 11:22:12.0332 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource-[Line:2096]>{dataSource-1} closed
+2020-10-27 11:22:17.0546 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 36332 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-27 11:22:17.0548 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-27 11:22:18.0034 [main] WARN  o.m.s.mapper.ClassPathMapperScanner-[Line:44]>No MyBatis mapper was found in '[com.zhuoqu.slg.data.bi.stats]' package. Please check your configuration.
+2020-10-27 11:22:18.0179 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure-[Line:56]>Init DruidDataSource
+2020-10-27 11:22:18.0315 [main] INFO  c.alibaba.druid.pool.DruidDataSource-[Line:983]>{dataSource-1} inited
+2020-10-27 11:22:18.0510 [task-1] INFO  org.hibernate.Version-[Line:44]>HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-27 11:22:18.0789 [task-1] INFO  o.h.annotations.common.Version-[Line:49]>HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-27 11:22:19.0166 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 11:22:19.0205 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 11:22:19.0206 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 11:22:19.0220 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 11:22:19.0221 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 11:22:19.0221 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-10-27 11:22:19.0221 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 11:22:19.0221 [main] INFO  org.quartz.core.QuartzScheduler-[Line:2293]>JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@61ecbee9
+2020-10-27 11:22:19.0267 [main] INFO  org.quartz.core.QuartzScheduler-[Line:547]>Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-10-27 11:22:19.0273 [task-1] INFO  org.hibernate.dialect.Dialect-[Line:170]>HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-10-27 11:22:19.0283 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 2.016 seconds (JVM running for 2.595)
+2020-10-27 11:22:19.0849 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator-[Line:52]>HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-27 11:22:23.0281 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-10-27 11:22:23.0282 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler-[Line:666]>Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-10-27 11:22:23.0282 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-10-27 11:22:23.0282 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler-[Line:740]>Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-10-27 11:22:23.0285 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource-[Line:2024]>{dataSource-1} closing ...
+2020-10-27 11:22:23.0287 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource-[Line:2096]>{dataSource-1} closed
+2020-10-27 11:22:25.0864 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 17416 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-27 11:22:25.0866 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-27 11:22:26.0263 [main] WARN  o.m.s.mapper.ClassPathMapperScanner-[Line:44]>No MyBatis mapper was found in '[com.zhuoqu.slg.data.bi.stats]' package. Please check your configuration.
+2020-10-27 11:22:26.0373 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure-[Line:56]>Init DruidDataSource
+2020-10-27 11:22:26.0484 [main] INFO  c.alibaba.druid.pool.DruidDataSource-[Line:983]>{dataSource-1} inited
+2020-10-27 11:22:26.0645 [task-1] INFO  org.hibernate.Version-[Line:44]>HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-27 11:22:26.0753 [task-1] INFO  o.h.annotations.common.Version-[Line:49]>HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-27 11:22:26.0967 [task-1] INFO  org.hibernate.dialect.Dialect-[Line:170]>HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-10-27 11:22:26.0993 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 11:22:27.0001 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 11:22:27.0001 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 11:22:27.0002 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 11:22:27.0002 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 11:22:27.0002 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-10-27 11:22:27.0002 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 11:22:27.0003 [main] INFO  org.quartz.core.QuartzScheduler-[Line:2293]>JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@313f8301
+2020-10-27 11:22:27.0023 [main] INFO  org.quartz.core.QuartzScheduler-[Line:547]>Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-10-27 11:22:27.0031 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 1.385 seconds (JVM running for 1.729)
+2020-10-27 11:22:27.0426 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator-[Line:52]>HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-27 11:23:04.0449 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 20688 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-27 11:23:04.0451 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-27 11:23:04.0861 [main] WARN  o.m.s.mapper.ClassPathMapperScanner-[Line:44]>No MyBatis mapper was found in '[com.zhuoqu.slg.data.bi.stats]' package. Please check your configuration.
+2020-10-27 11:23:04.0969 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure-[Line:56]>Init DruidDataSource
+2020-10-27 11:23:05.0084 [main] INFO  c.alibaba.druid.pool.DruidDataSource-[Line:983]>{dataSource-1} inited
+2020-10-27 11:23:05.0243 [task-1] INFO  org.hibernate.Version-[Line:44]>HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-27 11:23:05.0344 [task-1] INFO  o.h.annotations.common.Version-[Line:49]>HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-27 11:23:05.0537 [task-1] INFO  org.hibernate.dialect.Dialect-[Line:170]>HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-10-27 11:23:05.0565 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 11:23:05.0573 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 11:23:05.0573 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 11:23:05.0574 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 11:23:05.0574 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 11:23:05.0574 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-10-27 11:23:05.0574 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 11:23:05.0574 [main] INFO  org.quartz.core.QuartzScheduler-[Line:2293]>JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5e1fc42f
+2020-10-27 11:23:05.0592 [main] INFO  org.quartz.core.QuartzScheduler-[Line:547]>Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-10-27 11:23:05.0600 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 1.364 seconds (JVM running for 1.718)
+2020-10-27 11:23:05.0832 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator-[Line:52]>HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-27 11:24:04.0656 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 29400 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-27 11:24:04.0658 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-27 11:24:05.0057 [main] WARN  o.m.s.mapper.ClassPathMapperScanner-[Line:44]>No MyBatis mapper was found in '[com.zhuoqu.slg.data.bi.stats]' package. Please check your configuration.
+2020-10-27 11:24:05.0168 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure-[Line:56]>Init DruidDataSource
+2020-10-27 11:24:05.0286 [main] INFO  c.alibaba.druid.pool.DruidDataSource-[Line:983]>{dataSource-1} inited
+2020-10-27 11:24:05.0624 [task-1] INFO  org.hibernate.Version-[Line:44]>HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-27 11:24:05.0724 [task-1] INFO  o.h.annotations.common.Version-[Line:49]>HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-27 11:24:05.0767 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 11:24:05.0775 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 11:24:05.0776 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 11:24:05.0776 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 11:24:05.0777 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 11:24:05.0777 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-10-27 11:24:05.0777 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 11:24:05.0777 [main] INFO  org.quartz.core.QuartzScheduler-[Line:2293]>JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@ef60710
+2020-10-27 11:24:05.0794 [main] INFO  org.quartz.core.QuartzScheduler-[Line:547]>Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-10-27 11:24:05.0802 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 1.367 seconds (JVM running for 1.706)
+2020-10-27 11:24:05.0900 [task-1] INFO  org.hibernate.dialect.Dialect-[Line:170]>HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-10-27 11:24:06.0056 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator-[Line:52]>HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-27 11:25:53.0233 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 14368 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-27 11:25:53.0235 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-27 11:25:53.0563 [main] WARN  o.m.s.mapper.ClassPathMapperScanner-[Line:44]>No MyBatis mapper was found in '[com.zhuoqu.slg.data.bi.stats]' package. Please check your configuration.
+2020-10-27 11:25:53.0665 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure-[Line:56]>Init DruidDataSource
+2020-10-27 11:25:53.0782 [main] INFO  c.alibaba.druid.pool.DruidDataSource-[Line:983]>{dataSource-1} inited
+2020-10-27 11:25:54.0191 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 11:25:54.0198 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 11:25:54.0199 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 11:25:54.0199 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 11:25:54.0200 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 11:25:54.0200 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-10-27 11:25:54.0200 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 11:25:54.0200 [main] INFO  org.quartz.core.QuartzScheduler-[Line:2293]>JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@103082dd
+2020-10-27 11:25:54.0226 [main] INFO  org.quartz.core.QuartzScheduler-[Line:547]>Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-10-27 11:25:54.0232 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 1.211 seconds (JVM running for 1.52)
+2020-10-27 11:26:43.0545 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 16264 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-27 11:26:43.0548 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-27 11:26:43.0875 [main] WARN  o.m.s.mapper.ClassPathMapperScanner-[Line:44]>No MyBatis mapper was found in '[com.zhuoqu.slg.data.bi.stats]' package. Please check your configuration.
+2020-10-27 11:26:43.0978 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure-[Line:56]>Init DruidDataSource
+2020-10-27 11:26:44.0087 [main] INFO  c.alibaba.druid.pool.DruidDataSource-[Line:983]>{dataSource-1} inited
+2020-10-27 11:26:44.0481 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 11:26:44.0489 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 11:26:44.0489 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 11:26:44.0490 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 11:26:44.0490 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 11:26:44.0490 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-10-27 11:26:44.0490 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 11:26:44.0491 [main] INFO  org.quartz.core.QuartzScheduler-[Line:2293]>JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@77ec6a3d
+2020-10-27 11:26:44.0511 [main] INFO  org.quartz.core.QuartzScheduler-[Line:547]>Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-10-27 11:26:44.0522 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 1.19 seconds (JVM running for 1.502)
+2020-10-27 11:28:29.0379 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 24444 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-27 11:28:29.0382 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-27 11:28:29.0774 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 11:28:29.0776 [main] INFO  org.quartz.simpl.SimpleThreadPool-[Line:268]>Job execution threads will use class loader of thread: main
+2020-10-27 11:28:29.0782 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 11:28:29.0782 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 11:28:29.0783 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 11:28:29.0783 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 11:28:29.0783 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2020-10-27 11:28:29.0783 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 11:28:29.0876 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 11:28:29.0877 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 11:28:29.0877 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 11:28:29.0878 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 11:28:29.0878 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 11:28:29.0878 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-10-27 11:28:29.0878 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 11:28:29.0878 [main] INFO  org.quartz.core.QuartzScheduler-[Line:2293]>JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1d207fad
+2020-10-27 11:28:29.0895 [main] INFO  org.quartz.core.QuartzScheduler-[Line:666]>Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-10-27 11:28:29.0895 [main] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-10-27 11:28:29.0896 [main] INFO  org.quartz.core.QuartzScheduler-[Line:740]>Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-10-27 11:28:29.0896 [main] INFO  org.quartz.core.QuartzScheduler-[Line:666]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2020-10-27 11:28:29.0896 [main] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2020-10-27 11:28:29.0896 [main] INFO  org.quartz.core.QuartzScheduler-[Line:740]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-10-27 11:28:29.0904 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'channelMapMapper' defined in file [F:\work\server\bi-stats\bi-stats\target\classes\com\zhuoqu\slg\data\bi\stats\mybatis\dao\ChannelMapMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:12)
+Caused by: java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.util.Assert.notNull(Assert.java:201)
+	at org.mybatis.spring.support.SqlSessionDaoSupport.checkDaoConfig(SqlSessionDaoSupport.java:122)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:73)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 16 common frames omitted
+2020-10-27 11:31:11.0225 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 8492 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-27 11:31:11.0227 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-27 11:31:11.0624 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 11:31:11.0626 [main] INFO  org.quartz.simpl.SimpleThreadPool-[Line:268]>Job execution threads will use class loader of thread: main
+2020-10-27 11:31:11.0631 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 11:31:11.0632 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 11:31:11.0633 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 11:31:11.0633 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 11:31:11.0633 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2020-10-27 11:31:11.0634 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 11:31:11.0726 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 11:31:11.0727 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 11:31:11.0727 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 11:31:11.0727 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 11:31:11.0727 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 11:31:11.0727 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-10-27 11:31:11.0727 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 11:31:11.0727 [main] INFO  org.quartz.core.QuartzScheduler-[Line:2293]>JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@21f9277b
+2020-10-27 11:31:11.0751 [main] INFO  org.quartz.core.QuartzScheduler-[Line:666]>Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-10-27 11:31:11.0751 [main] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-10-27 11:31:11.0751 [main] INFO  org.quartz.core.QuartzScheduler-[Line:740]>Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-10-27 11:31:11.0752 [main] INFO  org.quartz.core.QuartzScheduler-[Line:666]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2020-10-27 11:31:11.0752 [main] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2020-10-27 11:31:11.0752 [main] INFO  org.quartz.core.QuartzScheduler-[Line:740]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-10-27 11:31:11.0763 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'channelMapMapper' defined in file [F:\work\server\bi-stats\bi-stats\target\classes\com\zhuoqu\slg\data\bi\stats\mybatis\dao\ChannelMapMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:12)
+Caused by: java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.util.Assert.notNull(Assert.java:201)
+	at org.mybatis.spring.support.SqlSessionDaoSupport.checkDaoConfig(SqlSessionDaoSupport.java:122)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:73)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 16 common frames omitted
+2020-10-27 11:33:39.0691 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 19940 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-27 11:33:39.0693 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-27 11:33:40.0100 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 11:33:40.0102 [main] INFO  org.quartz.simpl.SimpleThreadPool-[Line:268]>Job execution threads will use class loader of thread: main
+2020-10-27 11:33:40.0108 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 11:33:40.0108 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 11:33:40.0109 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 11:33:40.0110 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 11:33:40.0110 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2020-10-27 11:33:40.0110 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 11:33:40.0235 [main] INFO  org.quartz.core.QuartzScheduler-[Line:666]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2020-10-27 11:33:40.0236 [main] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2020-10-27 11:33:40.0236 [main] INFO  org.quartz.core.QuartzScheduler-[Line:740]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-10-27 11:33:40.0244 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter-[Line:40]>
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method sqlSessionFactory in org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration required a single bean, but 2 were found:
+	- biDataSource: defined by method 'biDataSource' in class path resource [com/zhuoqu/slg/data/bi/stats/config/DataSourceConfig.class]
+	- statsDataSource: defined by method 'statsDataSource' in class path resource [com/zhuoqu/slg/data/bi/stats/config/DataSourceConfig.class]
+
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+2020-10-27 11:39:30.0457 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 20900 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-27 11:39:30.0460 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-27 11:39:30.0861 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 11:39:30.0863 [main] INFO  org.quartz.simpl.SimpleThreadPool-[Line:268]>Job execution threads will use class loader of thread: main
+2020-10-27 11:39:30.0869 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 11:39:30.0869 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 11:39:30.0869 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 11:39:30.0870 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 11:39:30.0870 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2020-10-27 11:39:30.0870 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 11:39:30.0970 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 11:39:30.0971 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 11:39:30.0971 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 11:39:30.0971 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 11:39:30.0971 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 11:39:30.0971 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-10-27 11:39:30.0971 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 11:39:30.0971 [main] INFO  org.quartz.core.QuartzScheduler-[Line:2293]>JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@59942b48
+2020-10-27 11:39:30.0989 [main] INFO  org.quartz.core.QuartzScheduler-[Line:666]>Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-10-27 11:39:30.0989 [main] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-10-27 11:39:30.0990 [main] INFO  org.quartz.core.QuartzScheduler-[Line:740]>Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-10-27 11:39:30.0990 [main] INFO  org.quartz.core.QuartzScheduler-[Line:666]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2020-10-27 11:39:30.0990 [main] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2020-10-27 11:39:30.0990 [main] INFO  org.quartz.core.QuartzScheduler-[Line:740]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-10-27 11:39:31.0000 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'channelMapMapper' defined in file [F:\work\server\bi-stats\bi-stats\target\classes\com\zhuoqu\slg\data\bi\stats\mybatis\dao\ChannelMapMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:12)
+Caused by: java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.util.Assert.notNull(Assert.java:201)
+	at org.mybatis.spring.support.SqlSessionDaoSupport.checkDaoConfig(SqlSessionDaoSupport.java:122)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:73)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 16 common frames omitted
+2020-10-27 11:45:58.0764 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 11396 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-27 11:45:58.0769 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-27 11:45:59.0282 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 11:45:59.0284 [main] INFO  org.quartz.simpl.SimpleThreadPool-[Line:268]>Job execution threads will use class loader of thread: main
+2020-10-27 11:45:59.0289 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 11:45:59.0289 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 11:45:59.0290 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 11:45:59.0290 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 11:45:59.0290 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2020-10-27 11:45:59.0290 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 11:45:59.0379 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 11:45:59.0380 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 11:45:59.0380 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 11:45:59.0380 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 11:45:59.0380 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 11:45:59.0380 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-10-27 11:45:59.0380 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 11:45:59.0380 [main] INFO  org.quartz.core.QuartzScheduler-[Line:2293]>JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2e3a5237
+2020-10-27 11:45:59.0399 [main] INFO  org.quartz.core.QuartzScheduler-[Line:666]>Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-10-27 11:45:59.0399 [main] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-10-27 11:45:59.0399 [main] INFO  org.quartz.core.QuartzScheduler-[Line:740]>Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-10-27 11:45:59.0400 [main] INFO  org.quartz.core.QuartzScheduler-[Line:666]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2020-10-27 11:45:59.0400 [main] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2020-10-27 11:45:59.0400 [main] INFO  org.quartz.core.QuartzScheduler-[Line:740]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-10-27 11:45:59.0408 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'channelMapMapper' defined in file [F:\work\server\bi-stats\bi-stats\target\classes\com\zhuoqu\slg\data\bi\stats\mybatis\dao\ChannelMapMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:15)
+Caused by: java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.util.Assert.notNull(Assert.java:201)
+	at org.mybatis.spring.support.SqlSessionDaoSupport.checkDaoConfig(SqlSessionDaoSupport.java:122)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:73)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 16 common frames omitted
+2020-10-27 11:52:14.0882 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 7024 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-27 11:52:14.0885 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-27 11:52:15.0272 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 11:52:15.0273 [main] INFO  org.quartz.simpl.SimpleThreadPool-[Line:268]>Job execution threads will use class loader of thread: main
+2020-10-27 11:52:15.0278 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 11:52:15.0279 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 11:52:15.0279 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 11:52:15.0280 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 11:52:15.0280 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2020-10-27 11:52:15.0280 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 11:52:15.0370 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 11:52:15.0371 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 11:52:15.0372 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 11:52:15.0372 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 11:52:15.0372 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 11:52:15.0372 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-10-27 11:52:15.0372 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 11:52:15.0372 [main] INFO  org.quartz.core.QuartzScheduler-[Line:2293]>JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7b44b63d
+2020-10-27 11:52:15.0389 [main] INFO  org.quartz.core.QuartzScheduler-[Line:666]>Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-10-27 11:52:15.0389 [main] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-10-27 11:52:15.0390 [main] INFO  org.quartz.core.QuartzScheduler-[Line:740]>Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-10-27 11:52:15.0390 [main] INFO  org.quartz.core.QuartzScheduler-[Line:666]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2020-10-27 11:52:15.0391 [main] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2020-10-27 11:52:15.0391 [main] INFO  org.quartz.core.QuartzScheduler-[Line:740]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-10-27 11:52:15.0400 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'channelMapMapper' defined in file [F:\work\server\bi-stats\bi-stats\target\classes\com\zhuoqu\slg\data\bi\stats\mybatis\dao\ChannelMapMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:15)
+Caused by: java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.util.Assert.notNull(Assert.java:201)
+	at org.mybatis.spring.support.SqlSessionDaoSupport.checkDaoConfig(SqlSessionDaoSupport.java:122)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:73)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 16 common frames omitted

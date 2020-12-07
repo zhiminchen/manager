@@ -1,0 +1,117 @@
+2020-10-26 17:36:03.0207 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 29184 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 17:36:03.0211 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 17:36:03.0720 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-26 17:36:03.0722 [main] INFO  org.quartz.simpl.SimpleThreadPool-[Line:268]>Job execution threads will use class loader of thread: main
+2020-10-26 17:36:03.0737 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-26 17:36:03.0738 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-26 17:36:03.0739 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-26 17:36:03.0739 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-26 17:36:03.0739 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2020-10-26 17:36:03.0739 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-26 17:36:03.0784 [main] INFO  org.quartz.core.QuartzScheduler-[Line:666]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2020-10-26 17:36:03.0784 [main] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2020-10-26 17:36:03.0785 [main] INFO  org.quartz.core.QuartzScheduler-[Line:740]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-10-26 17:36:03.0795 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter-[Line:40]>
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.datasource.type' to java.lang.Class<javax.sql.DataSource>:
+
+    Property: spring.datasource.type
+    Value: com.alibaba.druid.pool.DruidDataSource
+    Origin: class path resource [application.yml]:32:11
+    Reason: No converter found capable of converting from type [java.lang.String] to type [java.lang.Class<javax.sql.DataSource>]
+
+Action:
+
+Update your application's configuration
+
+2020-10-26 17:38:33.0005 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 9248 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 17:38:33.0008 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 17:38:33.0511 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-26 17:38:33.0513 [main] INFO  org.quartz.simpl.SimpleThreadPool-[Line:268]>Job execution threads will use class loader of thread: main
+2020-10-26 17:38:33.0521 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-26 17:38:33.0521 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-26 17:38:33.0522 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-26 17:38:33.0523 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-26 17:38:33.0523 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2020-10-26 17:38:33.0523 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-26 17:38:33.0700 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-26 17:38:33.0701 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-26 17:38:33.0702 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-26 17:38:33.0702 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-26 17:38:33.0702 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-26 17:38:33.0702 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-10-26 17:38:33.0702 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-26 17:38:33.0702 [main] INFO  org.quartz.core.QuartzScheduler-[Line:2293]>JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@58b67519
+2020-10-26 17:38:33.0721 [main] INFO  org.quartz.core.QuartzScheduler-[Line:547]>Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-10-26 17:38:33.0733 [main] INFO  org.quartz.core.QuartzScheduler-[Line:547]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2020-10-26 17:38:33.0736 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 1.026 seconds (JVM running for 1.509)
+2020-10-26 17:40:33.0099 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-10-26 17:40:33.0100 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler-[Line:666]>Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-10-26 17:40:33.0100 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-10-26 17:40:33.0100 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler-[Line:740]>Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-10-26 17:40:33.0102 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler-[Line:666]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2020-10-26 17:40:33.0102 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2020-10-26 17:40:33.0102 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler-[Line:740]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-10-26 17:40:37.0992 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 21052 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-26 17:40:37.0994 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-26 17:40:38.0480 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-26 17:40:38.0481 [main] INFO  org.quartz.simpl.SimpleThreadPool-[Line:268]>Job execution threads will use class loader of thread: main
+2020-10-26 17:40:38.0487 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-26 17:40:38.0487 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-26 17:40:38.0487 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-26 17:40:38.0488 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-26 17:40:38.0488 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2020-10-26 17:40:38.0488 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-26 17:40:38.0595 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-26 17:40:38.0595 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-26 17:40:38.0595 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-26 17:40:38.0595 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-26 17:40:38.0596 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-26 17:40:38.0596 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-10-26 17:40:38.0596 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-26 17:40:38.0596 [main] INFO  org.quartz.core.QuartzScheduler-[Line:2293]>JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7ae9a33a
+2020-10-26 17:40:38.0610 [main] INFO  org.quartz.core.QuartzScheduler-[Line:547]>Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-10-26 17:40:38.0620 [main] INFO  org.quartz.core.QuartzScheduler-[Line:547]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2020-10-26 17:40:38.0623 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 0.883 seconds (JVM running for 1.234)
+2020-10-26 17:40:38.0625 [main] INFO  c.z.s.data.bi.stats.TripartiteBoost-[Line:37]>服务器启动完成！！！！！！！！！！！！！！！！！！！！！！

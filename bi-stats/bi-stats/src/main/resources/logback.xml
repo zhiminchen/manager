@@ -1,0 +1,80 @@
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+    <property name="USER_HOME" value="${user.dir}/stats_logs"/>
+    <contextName>slg-game</contextName>
+
+    <appender name="FILE"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <prudent>false</prudent>
+        <file>${USER_HOME}/logs/work.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${USER_HOME}/bak/work/%d{yyyy-MM-dd-HH}.log</fileNamePattern>
+            <maxHistory>240</maxHistory>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSSS} [%thread] %-5level %logger{36}-[Line:%L]>%m%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="ERROR_FILE"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${USER_HOME}/logs/error.log</file>
+        <prudent>false</prudent>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${USER_HOME}/bak/error/%d{yyyy-MM-dd-HH}.log
+            </fileNamePattern>
+            <maxHistory>240</maxHistory>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSSS} [%thread] %-5level %logger{36}-[Line:%L]>%m%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSSS} [%thread] %-5level %logger{36}-[Line:%L]>%m%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="profileAppender"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${USER_HOME}/logs/profile.log</file>
+        <prudent>false</prudent>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${USER_HOME}/bak/profile/%d{yyyy-MM-dd-HH}.log
+            </fileNamePattern>
+            <maxHistory>240</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSSS} %-5level %logger{12}>%m%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <logger name="profile" level="DEBUG" additivity="false">
+        <appender-ref ref="profileAppender"/>
+    </logger>
+
+
+
+
+
+    <logger name="org.apache.kafka" level="INfO" />
+    <logger name="org.springframework" level="error" />
+    <logger name="org.quartz.core.QuartzSchedulerThread" level="WARN" />
+    <logger name="org.eclipse.jetty" level="INfO" />
+    <logger name="com.zaxxer.hikari.pool.PoolBase" level="INFO"/>
+    <logger name="com.zaxxer.hikari.pool.HikariPool" level="INFO"/>
+    <logger name="com.zaxxer.hikari.HikariDataSource" level="INFO"/>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="ERROR_FILE"/>
+    </root>
+</configuration>

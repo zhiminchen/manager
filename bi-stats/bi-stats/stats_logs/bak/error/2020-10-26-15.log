@@ -1,0 +1,551 @@
+2020-10-26 15:03:17.0146 [main] ERROR com.zaxxer.hikari.HikariConfig-[Line:482]>Failed to load driver class com.mysql.cj.jdbc.Driver from HikariConfig class classloader jdk.internal.loader.ClassLoaders$AppClassLoader@2f0e140b
+2020-10-26 15:03:17.0156 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter-[Line:40]>
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'hikari.bi' to javax.sql.DataSource:
+
+    Property: hikari.bi.driver-class-name
+    Value: com.mysql.cj.jdbc.Driver
+    Origin: class path resource [application.yml]:14:24
+    Reason: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+
+Action:
+
+Update your application's configuration
+
+2020-10-26 15:06:53.0942 [main] ERROR com.zaxxer.hikari.HikariConfig-[Line:482]>Failed to load driver class com.mysql.cj.jdbc.Driver from HikariConfig class classloader jdk.internal.loader.ClassLoaders$AppClassLoader@2f0e140b
+2020-10-26 15:06:53.0953 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter-[Line:40]>
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'hikari.bi' to javax.sql.DataSource:
+
+    Property: hikari.bi.driver-class-name
+    Value: com.mysql.cj.jdbc.Driver
+    Origin: class path resource [application.yml]:14:24
+    Reason: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+
+Action:
+
+Update your application's configuration
+
+2020-10-26 15:11:54.0421 [main] ERROR c.z.s.d.b.s.s.login.detail.LoginTask-[Line:55]>StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`,)values('2020-10-24','game','1','-1','1','20')   ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')values('2020-10-24','game','1','-1','1','20')' at line 1
+org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`,)values('2020-10-24','game','1','-1','1','20')   ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')values('2020-10-24','game','1','-1','1','20')' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:523)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.lambda$doStatsTask$0(LoginTask.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.doStatsTask(LoginTask.java:46)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:77)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')values('2020-10-24','game','1','-1','1','20')' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1335)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2108)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:511)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:508)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 14 common frames omitted
+2020-10-26 15:11:54.0436 [main] ERROR c.z.s.d.b.s.s.login.detail.LoginTask-[Line:55]>StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`,)values('2020-10-24','game','1','-1','2','21')   ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')values('2020-10-24','game','1','-1','2','21')' at line 1
+org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`,)values('2020-10-24','game','1','-1','2','21')   ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')values('2020-10-24','game','1','-1','2','21')' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:523)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.lambda$doStatsTask$0(LoginTask.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.doStatsTask(LoginTask.java:46)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:77)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')values('2020-10-24','game','1','-1','2','21')' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1335)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2108)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:511)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:508)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 14 common frames omitted
+2020-10-26 15:11:54.0451 [main] ERROR c.z.s.d.b.s.s.login.detail.LoginTask-[Line:55]>StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`,)values('2020-10-24','game','2','-1','1','1')   ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')values('2020-10-24','game','2','-1','1','1')' at line 1
+org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`,)values('2020-10-24','game','2','-1','1','1')   ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')values('2020-10-24','game','2','-1','1','1')' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:523)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.lambda$doStatsTask$0(LoginTask.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.doStatsTask(LoginTask.java:46)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:77)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')values('2020-10-24','game','2','-1','1','1')' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1335)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2108)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:511)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:508)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 14 common frames omitted
+2020-10-26 15:12:40.0268 [main] ERROR c.z.s.d.b.s.s.login.detail.LoginTask-[Line:55]>StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','1','20')   ]; nested exception is java.sql.SQLSyntaxErrorException: Table 'bi_data.login_count' doesn't exist
+org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','1','20')   ]; nested exception is java.sql.SQLSyntaxErrorException: Table 'bi_data.login_count' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:523)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.lambda$doStatsTask$0(LoginTask.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.doStatsTask(LoginTask.java:46)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:77)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'bi_data.login_count' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1335)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2108)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:511)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:508)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 14 common frames omitted
+2020-10-26 15:12:40.0287 [main] ERROR c.z.s.d.b.s.s.login.detail.LoginTask-[Line:55]>StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','2','21')   ]; nested exception is java.sql.SQLSyntaxErrorException: Table 'bi_data.login_count' doesn't exist
+org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','1','-1','2','21')   ]; nested exception is java.sql.SQLSyntaxErrorException: Table 'bi_data.login_count' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:523)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.lambda$doStatsTask$0(LoginTask.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.doStatsTask(LoginTask.java:46)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:77)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'bi_data.login_count' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1335)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2108)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:511)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:508)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 14 common frames omitted
+2020-10-26 15:12:40.0305 [main] ERROR c.z.s.d.b.s.s.login.detail.LoginTask-[Line:55]>StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','2','-1','1','1')   ]; nested exception is java.sql.SQLSyntaxErrorException: Table 'bi_data.login_count' doesn't exist
+org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [replace into `login_count`(`day`,`server_name`,`server_id`,`channel_id`,`type`,`count`)values('2020-10-24','game','2','-1','1','1')   ]; nested exception is java.sql.SQLSyntaxErrorException: Table 'bi_data.login_count' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:523)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.lambda$doStatsTask$0(LoginTask.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.sql.login.detail.LoginTask.doStatsTask(LoginTask.java:46)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:77)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'bi_data.login_count' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1335)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2108)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:511)
+	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:508)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 14 common frames omitted
+2020-10-26 15:17:17.0044 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [select day , server_name , server_id, item_id, op_code  sum(change) as count from `resource_count_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sum(change) as count from `resource_count_2020-10-24`  where day='2020-10-24' gr' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at com.zhuoqu.slg.data.bi.stats.sql.resource.detail.ResourceTask.doStatsTask(ResourceTask.java:36)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:79)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sum(change) as count from `resource_count_2020-10-24`  where day='2020-10-24' gr' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:439)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 13 common frames omitted
+2020-10-26 15:17:48.0483 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [select day , server_name , server_id, item_id, op_code  sum(change) as count from `resource_count_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sum(change) as count from `resource_count_2020-10-24`  where day='2020-10-24' gr' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at com.zhuoqu.slg.data.bi.stats.sql.resource.detail.ResourceTask.doStatsTask(ResourceTask.java:36)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:79)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sum(change) as count from `resource_count_2020-10-24`  where day='2020-10-24' gr' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:439)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 13 common frames omitted
+2020-10-26 15:18:42.0156 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [select day , server_name , server_id, item_id, op_code , sum(change) as count from `resource_count_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'change) as count from `resource_count_2020-10-24`  where day='2020-10-24' group ' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at com.zhuoqu.slg.data.bi.stats.sql.resource.detail.ResourceTask.doStatsTask(ResourceTask.java:36)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:79)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'change) as count from `resource_count_2020-10-24`  where day='2020-10-24' group ' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:439)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 13 common frames omitted
+2020-10-26 15:22:31.0739 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [select day , server_name , server_id, item_id, op_code , sum(change) as count from `bi_resource_count_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'change) as count from `bi_resource_count_2020-10-24`  where day='2020-10-24' gro' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at com.zhuoqu.slg.data.bi.stats.sql.resource.detail.ResourceTask.doStatsTask(ResourceTask.java:36)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:79)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'change) as count from `bi_resource_count_2020-10-24`  where day='2020-10-24' gro' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:439)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 13 common frames omitted
+2020-10-26 15:23:28.0460 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [select day , server_name , server_id, item_id, op_code , sum(change) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'change) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by ' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at com.zhuoqu.slg.data.bi.stats.sql.resource.detail.ResourceTask.doStatsTask(ResourceTask.java:36)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:79)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'change) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by ' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:439)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 13 common frames omitted
+2020-10-26 15:31:15.0439 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [select day , server_name , server_id, item_id, op_code , sum(change) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'change) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by ' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at com.zhuoqu.slg.data.bi.stats.sql.resource.detail.ResourceTask.doStatsTask(ResourceTask.java:36)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:79)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'change) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by ' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:439)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 13 common frames omitted
+2020-10-26 15:34:01.0952 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: org.springframework.dao.DataIntegrityViolationException: StatementCallback; SQL [select day , server_name , server_id, item_id, op_code , sum(`change`) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code ]; Value '4,000,000,000' is outside of valid range for type java.lang.Integer; nested exception is java.sql.SQLDataException: Value '4,000,000,000' is outside of valid range for type java.lang.Integer
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:84)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at com.zhuoqu.slg.data.bi.stats.sql.resource.detail.ResourceTask.doStatsTask(ResourceTask.java:36)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:79)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+Caused by: java.sql.SQLDataException: Value '4,000,000,000' is outside of valid range for type java.lang.Integer
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:114)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:92)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getObject(ResultSetImpl.java:1393)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:797)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getInt(HikariProxyResultSet.java)
+	at com.zhuoqu.slg.data.bi.stats.mapper.ResourceMapper.mapRow(ResourceMapper.java:31)
+	at com.zhuoqu.slg.data.bi.stats.mapper.ResourceMapper.mapRow(ResourceMapper.java:15)
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:94)
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:61)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:440)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 13 common frames omitted
+Caused by: com.mysql.cj.exceptions.NumberOutOfRange: Value '4,000,000,000' is outside of valid range for type java.lang.Integer
+	at com.mysql.cj.result.IntegerValueFactory.createFromBigDecimal(IntegerValueFactory.java:71)
+	at com.mysql.cj.result.IntegerValueFactory.createFromBigDecimal(IntegerValueFactory.java:44)
+	at com.mysql.cj.protocol.a.MysqlTextValueDecoder.decodeDecimal(MysqlTextValueDecoder.java:130)
+	at com.mysql.cj.protocol.result.AbstractResultsetRow.decodeAndCreateReturnValue(AbstractResultsetRow.java:121)
+	at com.mysql.cj.protocol.result.AbstractResultsetRow.getValueFromBytes(AbstractResultsetRow.java:241)
+	at com.mysql.cj.protocol.a.result.ByteArrayRow.getValue(ByteArrayRow.java:91)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getObject(ResultSetImpl.java:1296)
+	... 21 common frames omitted
+2020-10-26 15:39:07.0794 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: org.springframework.dao.TransientDataAccessResourceException: StatementCallback; SQL [select day , server_name , server_id, item_id,  sum(`change`) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id ]; Column Index out of range, 6 > 5. ; nested exception is java.sql.SQLException: Column Index out of range, 6 > 5. 
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:110)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at com.zhuoqu.slg.data.bi.stats.sql.resource.detail.ResourceTask.doStatsTask(ResourceTask.java:55)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:79)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+Caused by: java.sql.SQLException: Column Index out of range, 6 > 5. 
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.checkColumnBounds(ResultSetImpl.java:469)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getObject(ResultSetImpl.java:1300)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getLong(ResultSetImpl.java:823)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getLong(HikariProxyResultSet.java)
+	at com.zhuoqu.slg.data.bi.stats.mapper.ResourceMapper.mapRow(ResourceMapper.java:31)
+	at com.zhuoqu.slg.data.bi.stats.mapper.ResourceMapper.mapRow(ResourceMapper.java:15)
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:94)
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:61)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:440)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 13 common frames omitted
+2020-10-26 15:40:04.0141 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:10)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [select day , server_name , server_id, item_id, op_code as -1, sum(`change`) as count from `bi_resource_2020-10-24`  where day='2020-10-24' group by day , server_name , server_id, item_id, op_code ]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, sum(`change`) as count from `bi_resource_2020-10-24`  where day='2020-10-24'' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at com.zhuoqu.slg.data.bi.stats.sql.resource.detail.ResourceTask.doStatsTask(ResourceTask.java:55)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.lambda$startJob$0(TaskServie.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.zhuoqu.slg.data.bi.stats.service.TaskServie.startJob(TaskServie.java:79)
+	at com.zhuoqu.slg.data.bi.stats.TripartiteBoost.run(TripartiteBoost.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, sum(`change`) as count from `bi_resource_2020-10-24`  where day='2020-10-24'' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:439)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:376)
+	... 13 common frames omitted

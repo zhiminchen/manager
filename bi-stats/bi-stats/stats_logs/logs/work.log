@@ -1,0 +1,220 @@
+2020-10-27 20:02:36.0872 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 30976 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-27 20:02:36.0878 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-27 20:02:37.0481 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 20:02:37.0482 [main] INFO  org.quartz.simpl.SimpleThreadPool-[Line:268]>Job execution threads will use class loader of thread: main
+2020-10-27 20:02:37.0488 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 20:02:37.0489 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 20:02:37.0490 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 20:02:37.0490 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 20:02:37.0490 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2020-10-27 20:02:37.0490 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 20:02:37.0687 [main] INFO  org.quartz.core.QuartzScheduler-[Line:666]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2020-10-27 20:02:37.0687 [main] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2020-10-27 20:02:37.0687 [main] INFO  org.quartz.core.QuartzScheduler-[Line:740]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-10-27 20:02:37.0696 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'channelMapMapper' defined in file [F:\work\server\bi-stats\bi-stats\target\classes\com\zhuoqu\slg\data\bi\stats\mybatis\dao\ChannelMapMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.zhuoqu.slg.data.bi.stats.mybatis.dao.ChannelMapMapper.BaseResultMap
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1404)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:17)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.zhuoqu.slg.data.bi.stats.mybatis.dao.ChannelMapMapper.BaseResultMap
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1509)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.zhuoqu.slg.data.bi.stats.mybatis.dao.ChannelMapMapper.BaseResultMap
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 30 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.zhuoqu.slg.data.bi.stats.mybatis.dao.ChannelMapMapper.BaseResultMap
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:523)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:153)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$4cd231af.CGLIB$sqlSessionFactory$0(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$4cd231af$$FastClassBySpringCGLIB$$b2e65ee.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$4cd231af.sqlSessionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 31 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.zhuoqu.slg.data.bi.stats.mybatis.dao.ChannelMapMapper.BaseResultMap
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:521)
+	... 44 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.zhuoqu.slg.data.bi.stats.mybatis.dao.ChannelMapMapper.BaseResultMap
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:872)
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:844)
+	at org.apache.ibatis.session.Configuration.addResultMap(Configuration.java:626)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addResultMap(MapperBuilderAssistant.java:214)
+	at org.apache.ibatis.builder.ResultMapResolver.resolve(ResultMapResolver.java:47)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:285)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:252)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:244)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:116)
+	... 46 common frames omitted
+2020-10-27 20:09:14.0050 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 28508 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-27 20:09:14.0052 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-27 20:09:14.0482 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 20:09:14.0484 [main] INFO  org.quartz.simpl.SimpleThreadPool-[Line:268]>Job execution threads will use class loader of thread: main
+2020-10-27 20:09:14.0489 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 20:09:14.0490 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 20:09:14.0490 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 20:09:14.0491 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 20:09:14.0491 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2020-10-27 20:09:14.0491 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 20:09:14.0653 [main] INFO  org.quartz.core.QuartzScheduler-[Line:666]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2020-10-27 20:09:14.0654 [main] INFO  org.quartz.core.QuartzScheduler-[Line:585]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2020-10-27 20:09:14.0654 [main] INFO  org.quartz.core.QuartzScheduler-[Line:740]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-10-27 20:09:14.0661 [main] ERROR o.s.boot.SpringApplication-[Line:837]>Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'channelMapMapper' defined in file [F:\work\server\bi-stats\bi-stats\target\classes\com\zhuoqu\slg\data\bi\stats\mybatis\dao\ChannelMapMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.zhuoqu.slg.data.bi.stats.mybatis.dao.ChannelMapMapper.BaseResultMap
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1404)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.zhuoqu.slg.data.bi.stats.BiStatsApplication.main(BiStatsApplication.java:17)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.zhuoqu.slg.data.bi.stats.mybatis.dao.ChannelMapMapper.BaseResultMap
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1509)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.zhuoqu.slg.data.bi.stats.mybatis.dao.ChannelMapMapper.BaseResultMap
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 30 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.zhuoqu.slg.data.bi.stats.mybatis.dao.ChannelMapMapper.BaseResultMap
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:523)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:153)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$7f603d21.CGLIB$sqlSessionFactory$0(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$7f603d21$$FastClassBySpringCGLIB$$92ea3c47.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$7f603d21.sqlSessionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 31 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [F:\work\server\bi-stats\bi-stats\target\classes\mapper\ChannelMapMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.zhuoqu.slg.data.bi.stats.mybatis.dao.ChannelMapMapper.BaseResultMap
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:521)
+	... 44 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.zhuoqu.slg.data.bi.stats.mybatis.dao.ChannelMapMapper.BaseResultMap
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:872)
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:844)
+	at org.apache.ibatis.session.Configuration.addResultMap(Configuration.java:626)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addResultMap(MapperBuilderAssistant.java:214)
+	at org.apache.ibatis.builder.ResultMapResolver.resolve(ResultMapResolver.java:47)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:285)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:252)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:244)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:116)
+	... 46 common frames omitted
+2020-10-27 20:10:53.0987 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:55]>Starting BiStatsApplication on DESKTOP-SU540NN with PID 3912 (F:\work\server\bi-stats\bi-stats\target\classes started by L in F:\work\server\bi-stats\bi-stats)
+2020-10-27 20:10:53.0990 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:651]>No active profile set, falling back to default profiles: default
+2020-10-27 20:10:54.0434 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 20:10:54.0436 [main] INFO  org.quartz.simpl.SimpleThreadPool-[Line:268]>Job execution threads will use class loader of thread: main
+2020-10-27 20:10:54.0441 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 20:10:54.0442 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 20:10:54.0442 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 20:10:54.0443 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 20:10:54.0443 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2020-10-27 20:10:54.0443 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 20:10:54.0791 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1220]>Using default implementation for ThreadExecutor
+2020-10-27 20:10:54.0792 [main] INFO  o.quartz.core.SchedulerSignalerImpl-[Line:61]>Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-10-27 20:10:54.0793 [main] INFO  org.quartz.core.QuartzScheduler-[Line:229]>Quartz Scheduler v.2.3.2 created.
+2020-10-27 20:10:54.0793 [main] INFO  org.quartz.simpl.RAMJobStore-[Line:155]>RAMJobStore initialized.
+2020-10-27 20:10:54.0793 [main] INFO  org.quartz.core.QuartzScheduler-[Line:294]>Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-10-27 20:10:54.0793 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1374]>Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-10-27 20:10:54.0793 [main] INFO  org.quartz.impl.StdSchedulerFactory-[Line:1378]>Quartz scheduler version: 2.3.2
+2020-10-27 20:10:54.0793 [main] INFO  org.quartz.core.QuartzScheduler-[Line:2293]>JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@385e36d4
+2020-10-27 20:10:54.0812 [main] INFO  org.quartz.core.QuartzScheduler-[Line:547]>Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-10-27 20:10:54.0825 [main] INFO  org.quartz.core.QuartzScheduler-[Line:547]>Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2020-10-27 20:10:54.0830 [main] INFO  c.z.s.d.bi.stats.BiStatsApplication-[Line:61]>Started BiStatsApplication in 1.106 seconds (JVM running for 1.558)
+2020-10-27 20:10:54.0834 [main] INFO  c.z.s.data.bi.stats.TripartiteBoost-[Line:45]>服务器启动完成！！！！！！！！！！！！！！！！！！！！！！
